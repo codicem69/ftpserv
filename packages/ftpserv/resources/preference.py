@@ -30,6 +30,7 @@ class AppPref(object):
         
     def dati(self, pane):
         fb = pane.formbuilder(cols=1,border_spacing='3px', margin='10px')
-        fb.dbselect('^.service',dbtable='sys.service',condition='$service_type=:f',
-                        condition_f='ftp',lbl='Ftp',hasDownArrow=True,
-                        selected_service_name='.service_name')
+        fb.div('to do')
+        #fb.dbselect('^.service',dbtable='sys.service',condition='$service_type=:f',
+        #                condition_f='ftp',lbl='Ftp',hasDownArrow=True,
+        #                selected_service_name='.service_name')

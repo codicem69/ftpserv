@@ -26,7 +26,7 @@ class ftpClient(BaseComponent):
 
     def ftp_remoteTree(self,frame,ftpname=None,remotedir=None):
         if not self.getService('ftp',ftpname):
-            raise GnrException('Please select the service into the app preference')
+            raise GnrException('Please insert the service into the sys pkg')
         else:
             resolver = self.getService('ftp',ftpname).ftpResolver()
         frame.data('.tree',resolver())
