@@ -2,4 +2,4 @@
 class Menu(object):
     def config(self,root,**kwargs):
         ftp = root.branch("FTP", tags="")
-        ftp.webpage('FTP',filepath='ftp_page')
+        ftp.webpage('Server page',filepath='server_page')
